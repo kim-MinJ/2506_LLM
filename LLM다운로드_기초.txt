@@ -1,3 +1,5 @@
+기본 선생님 구글 드라이브 python_시작 아래에 아나콘다 부분 참고
+
 아나콘다 설치법
 
 https://www.anaconda.com/download/success
@@ -61,7 +63,7 @@ git에 새 리포지토리 만들어서 연결하기
 선생님 구글드라이브 프롬프트_gpt 가장 아래 있는 코드 사용
 설치 : pip install openai 되어있는건 먼저 cmd가서 llm_Workspace에서 conda activate llmEnv해서 
 llmEnv로 이동후 pip install openai , pip install dotenv
-.env파일에 선생님 openai_api_key 넣어주기
+.env파일에 선생님 openai_api_key 넣어주기 (카톡에 있음)
 gitignore에는 ###Python###으로 되어있는 곳에 .gradio 넣어두기
 
 - 패키지 설치 여부 확인
