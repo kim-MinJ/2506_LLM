@@ -57,4 +57,14 @@ gitignore.io에서 window, python, vscode 넣어서 .gitignore 만들어서 폴�
 git에 새 리포지토리 만들어서 연결하기
 1_gradioUI.ipynb 내용은 선생님 git에서 2506_LLM 안에 있는 내용 가져오기
 
+2_gpt_test.ipynb는
+선생님 구글드라이브 프롬프트_gpt 가장 아래 있는 코드 사용
+설치 : pip install openai 되어있는건 먼저 cmd가서 llm_Workspace에서 conda activate llmEnv해서 
+llmEnv로 이동후 pip install openai , pip install dotenv
+.env파일에 선생님 openai_api_key 넣어주기
+gitignore에는 ###Python###으로 되어있는 곳에 .gradio 넣어두기
+
+- 패키지 설치 여부 확인
+pip list | findstr dotenv (리눅스 환경은 grap이지만 윈도우는 findstr)
+
 
