@@ -1,0 +1,60 @@
+아나콘다 설치법
+
+https://www.anaconda.com/download/success
+에서 미니콘다 설치
+
+우측 미니콘다에서 windows 64-Bit graphical installer 먼저 설치
+설치할때 설치 경로 확인하고
+체크박스 4개중 1,4번째 체크하고 설치
+
+anaconda prompt 실행
+
+llmEnv로 만들기
+conda create -n llmEnv python=3.12 -y (만약 accept나오면 a3번)
+conda info --envs
+
+conda activate llmEnv
+(llmEnv) C:\Users\사용자계정> ()가 llmEnv로 바뀌면 성공
+
+pip list 찍어서 3개 보이면 됨
+
+pip install gradio 로 그라디오 설치
+
+-------
+cmd에서 아나콘다 명령어 사용하기
+ 가상환경에서
+conda init cmd.exe (이거 안해주면 나중에 cmd에서 아나콘다 명령어 인식 못함)
+
+파일관리자에서 작업폴더(c드라이브/Class_20250616) 에서 llm_Workspace 폴더 만들기
+llm_Workspace폴더안에서 vscode실행
+vscode에서 폴더 D1105(or 1105) 생성
+D1105안에 1_gradioUI.ipynb파일 생성
+우측 상단 커널 선택 누르기
+중앙상단에 보이는 python+쥬피터 있는 바 클릭하면 확장 설치됨
+
+다시 커널 선택
+python으로 실행 => llmEnv로 실행
+
+터미널 열기(컨+`)(자동으로 cmd이겠지만 아니면 cmd로)
+conda activate llmEnv 사용해서 (llmEnv)붙는지 확인
+conda list로 확장자 깔린거 확인
+
+-작동(조작)법-
+중앙 상단에 + 코드 누르기
+print('hello')치고 컨+엔터(슆+엔터도 똑같음) => 설치하라나오면 설치
+컨+m,b쓰지말고 esc누르고 그냥 b쓰면 셀 추가됨
+컨+mm, 컨+my도 똑같이 esc상태에서 m이랑 y만 눌러도 반응함 컨+mz도 똑같이 esc상태 z
+
+현재 있는 셀 표시는 코드 좌측에 화살표 옆 주황색바로 알 수 있음
+주황색 바 잡고 드래그하면 위치이동도 가능
+j랑 k는 셀 선택 위치 변경됨
+alt+방향키(위, 아래) 누르면 셀 위치 변경
+컨+c, 컨+v가능
+컨+슆+방향키(위, 아래) 복사 가능(셀 단위, 코드 단위 둘 다 가능)
+
+선생님 git에 있는거 복붙해오고 
+gitignore.io에서 window, python, vscode 넣어서 .gitignore 만들어서 폴더에 넣기
+git에 새 리포지토리 만들어서 연결하기
+1_gradioUI.ipynb 내용은 선생님 git에서 2506_LLM 안에 있는 내용 가져오기
+
+
