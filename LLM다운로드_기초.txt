@@ -12,7 +12,7 @@ https://www.anaconda.com/download/success
 anaconda prompt 실행
 
 llmEnv로 만들기
-conda create -n llmEnv python=3.12 -y (만약 accept나오면 a3번)
+conda create -n llmEnv python=3.12 (만약 accept나오면 a3번)
 conda info --envs
 
 conda activate llmEnv
@@ -23,7 +23,7 @@ pip list 찍어서 3개 보이면 됨
 pip install gradio 로 그라디오 설치
 
 -------
-cmd에서 아나콘다 명령어 사용하기
+-cmd에서 아나콘다 명령어 사용하는 방법 ※cmd에서 실행하라는 소리 아님!!-
  가상환경에서
 conda init cmd.exe (이거 안해주면 나중에 cmd에서 아나콘다 명령어 인식 못함)
 
